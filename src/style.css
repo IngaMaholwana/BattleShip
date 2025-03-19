@@ -1,0 +1,90 @@
+.board-grid {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.board-grid {
+  grid-template: repeat(10, 1fr) / repeat(10, 1fr);
+}
+
+.board-container {
+  text-align: center;
+}
+
+.spot {
+  background-color: lightgrey;
+  width: 2rem;
+  aspect-ratio: 1/1;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+button.spot:hover {
+  background-color: darkgrey;
+}
+
+button.spot:active {
+  background-color: darkred;
+}
+
+#boards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.ship,
+#ship-preview > div {
+  background-color: dimgrey;
+  border-radius: 20%;
+}
+
+#ship-preview {
+  display: flex;
+  gap: 0.2rem;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+#ship-preview > div {
+  width: 1.5rem;
+  aspect-ratio: 1/1;
+}
+
+.hit {
+  background-image: url("./media/icons/x.svg");
+  background-size: cover;
+}
+
+.confirm,
+.close-modal {
+  padding: 0.2rem 1rem;
+}
+
+.close-modal {
+  background-color: indianred;
+  float: right;
+}
+
+dialog > h1 {
+  text-align: center;
+}
+
+.confirm {
+  float: none;
+  background-color: darkseagreen;
+}
+
+#pass-control::backdrop {
+  background-color: dimgray;
+}
+
+dialog form label {
+  display: block;
+  margin: 1rem 0;
+}
